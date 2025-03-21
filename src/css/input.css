@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+.navbar-fixed {
+  @apply fixed z-[999]  opacity-92 bg-white dark:bg-[#090D1F] dark:shadow-white/30 shadow-md backdrop-blur-sm;
+  /* box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1); */
+}
+
+.transition-navbar {
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
